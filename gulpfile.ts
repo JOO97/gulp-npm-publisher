@@ -12,11 +12,17 @@ import { createProject } from "gulp-typescript";
 //
 // --------------------------------------------------------------------------
 
-const input = path.join(__dirname, "../../src");
-const output = path.join(__dirname, "../../dist");
-const tsConfig = path.join(__dirname, "../../tsconfig.json");
+const input = path.join(__dirname, "./src");
+console.log(__dirname)
+console.log(input)
+
+const output = path.join(__dirname, "./dist");
+const tsConfig = path.join(__dirname, "./tsconfig.json");
+
+console.log('tsConfig',tsConfig)
 
 const project = createProject(tsConfig);
+console.log('project',project)
 const projectDirectory = project.projectDirectory;
 
 // --------------------------------------------------------------------------

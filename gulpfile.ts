@@ -22,7 +22,6 @@ const tsConfig = path.join(__dirname, "./tsconfig.json");
 console.log('tsConfig',tsConfig)
 
 const project = createProject(tsConfig);
-console.log('project',project)
 const projectDirectory = project.projectDirectory;
 
 // --------------------------------------------------------------------------
